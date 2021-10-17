@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MetaStudio - тестовое задание</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <!-- контейнер для формы -->
+    <div class="container">
+        <header class="rigstration-header">
+            <h2>Регистрация</h2>
+        </header>
+        <form class="form" id="form">
+            <div class="form-control">
+                <!-- <label for="login">Логин</label> -->
+                <input type="text" id="login" placeholder="Логин">
+                <small id="errorMsg" class="hidden"></small>
+            </div>
+            <div class="form-control">
+                <!-- <label for="email">Email</label> -->
+                <input type="text" id="email" placeholder="Email">
+                <small id="errorMsg" class="hidden"></small>
+            </div>
+            <div class="form-control">
+                <!-- <label for="phone">Телефон</label> -->
+                <input type="text" id="phone" placeholder="Телефон">
+    
+                <small id="errorMsg" class="hidden"></small>
+            </div>
+            <div class="form-control">
+                <!-- <label for="password">Пароль</label> -->
+                <input type="password" id="password" placeholder="Пароль">
+                <i class="fas fa-eye"></i>
+                <i class="fas fa-eye-slash hidden"></i>
+                <small id="errorMsg" class="hidden"></small>
+            </div>
+            <div class="form-control">
+                <!-- <label for="password2">Подтверждение пароля</label> -->
+                <input type="password" id="password2" placeholder="Подтверждение пароля">
+                <i class="fas fa-eye"></i>
+                <i class="fas fa-eye-slash hidden"></i>
+                <small id="errorMsg" class="hidden"></small>
+            </div>
+            <button class="btn" id="submitBtn">Зарегистрироваться</button>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
