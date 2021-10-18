@@ -56,11 +56,13 @@ body {
 }
 .form-control input::placeholder {
     color: #AEAEAE;
+    transition: all .2s linear;
 }
-.form-control input:active::placeholder {
+.form-control input:focus::placeholder {
     position: absolute;
     top: 2px;
     left: 12px;
+    font-size: 10px;
 }
 .form-control i {
     position: absolute;
@@ -76,10 +78,10 @@ body {
 /* .form-control i.fa-eye:active, i.fa-eye-slash:active {
     color: #E74266;
 } */
-.form-control i.fa-eye.hidden {
+i.fa-eye.hidden {
     display: none;
 }
-.form-control i.fa-eye-slash.hidden {
+i.fa-eye-slash.hidden {
     display: none;
 }
 .form-control i.fa-eye {
